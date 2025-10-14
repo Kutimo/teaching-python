@@ -121,6 +121,7 @@ flattened = [num for row in matrix for num in row]
    ```
 
 2. Extract all vowels from a sentence.
+
 3. Build a 5x5 grid of coordinates:
    ```python
    [(x, y) for x in range(5) for y in range(5)]
