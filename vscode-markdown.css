@@ -1,0 +1,119 @@
+/*
+ * GitHub Dark Mode Markdown Theme
+ * Uses GitHub's classic dark mode palette for a familiar feel.
+ */
+
+/* === Body and General Text === */
+.vscode-body {
+  /* GitHub Dark Mode Background and Foreground */
+  background-color: #0d1117; /* Very dark blue-gray background */
+  color: #c9d1d9;           /* Light gray text */
+  
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 30px;
+}
+
+/* === Headings === */
+h1, h2, h3, h4, h5, h6 {
+  color: #f0f6fc; /* Bright white/light blue for emphasis */
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  padding-bottom: 0.3em;
+  font-size: 2em;
+  border-bottom: 1px solid #30363d; /* Dark border divider */
+}
+
+h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid #21262d;
+}
+
+/* === Links === */
+a {
+  color: #58a6ff; /* GitHub's bright blue for links in dark mode */
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Inline Code === */
+code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: #363b42; /* Darker background for inline code */
+  border-radius: 6px;
+  color: #ffffff; /* Standard text color */
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+/* === Code Blocks (Pre) === */
+pre {
+  padding: 16px;
+  overflow: auto;
+  line-height: 1.45;
+  background-color: #161b22; /* Slightly darker background for the block */
+  border-radius: 6px;
+  color: #ffffff;
+}
+
+pre > code {
+  padding: 0; /* Remove inner padding */
+  margin: 0;
+  font-size: 100%;
+  background-color: transparent; /* Remove the inner background */
+}
+
+/* === Blockquotes === */
+blockquote {
+  padding: 0 1em;
+  color: #ffffff; /* Muted gray text */
+  border-left: 0.25em solid #30363d; /* Dark gray border */
+  margin: 0 0 16px;
+}
+
+/* === Lists === */
+ul, ol {
+  padding-left: 2em;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+/* === Horizontal Rule === */
+hr {
+  height: 0.25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #21262d; /* Dark divider line */
+  border: 0;
+}
+
+/* === Tables === */
+table {
+  border-collapse: collapse;
+  margin: 16px 0;
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+}
+
+th {
+  font-weight: 600;
+  background-color: #161b22; /* Darker block background */
+  color: #c9d1d9;
+}
+
+th, td {
+  padding: 6px 13px;
+  border: 1px solid #30363d; /* Dark border lines */
+}
