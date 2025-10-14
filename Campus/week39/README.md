@@ -200,3 +200,5 @@ def calculate(a: int, b: int) -> int:
 
 print(calculate(2, 3))  # (2+3) * (2*3) = 5 * 6 = 30
 ```
+
+
