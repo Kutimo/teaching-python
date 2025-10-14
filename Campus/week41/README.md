@@ -248,12 +248,100 @@ def capitalize_words(input_str: str) -> str:
 - Short and compact
 - Used for short tasks
 
+**Normal function:**
+
+```python
+def square(x):
+    return x * x
 ```
 
+**Lambda:**
+
+```python
+square = lambda x: x * x
 ```
 
+#### some use cases:
+
+- with `map()`
+
+```python
+#keep only even numbers
+nums: list[int] = [1, 2, 3, 4]
+
+doubled = list(map(lambda x: x * 2, nums))
 ```
 
+- with `filter()`
+
+```python
+nums: list[int] = [1, 2, 3, 4]
+
+evens: List[int] = list(filter(lambda x: x % 2 == 0, nums))
+print(evens)  # Output: [2, 4]
 ```
 
+- with `sorted()`
+
+```python
+#sort names ignoring case
+
+names: List[str] = ["bob", "Alice", "carol"]
+
+sorted_names: List[str] = sorted(names, key=lambda x: x.lower())
+
+print(sorted_names)  # Output: ['Alice', 'bob', 'carol']```
+``` 
+
+#### List comprehension and lambda functions together
+
+Remove spaces and convert to lowercase
+
+```python
+strings = ["Hello World", "Python 3", " List Comprehension "]
+
+cleaned = [(lambda s: s.replace(" ", "").lower())(s) for s in strings]
+
+print(cleaned)  # ['helloworld', 'python3', 'listcomprehension']
+```
+
+#### Final task for the day
+
+```python
+# take this survey list of dictionaries
+survey_responses: List[Dict[str, str]] = [
+    {'name': 'Alice', 'rating': '5/5', 'comment': '  Excellent service!  '},
+    {'name': 'Bob', 'rating': '4/5', 'comment': 'Good experience'},
+    {'name': 'Charlie', 'rating': '3/5', 'comment': '  Average  '},
+    {'name': 'Diana', 'rating': '5/5', 'comment': 'LOVED IT!!!'}
+]
+
+#clean it up using lambda functions and list comprehensions to get this:
+Alice: 5* - "excellent service!"
+Bob: 4* - "good experience"
+Charlie: 3* - "average"
+Diana: 5* - "loved it!!!"
+```
+
+hint:
+
+##### hint 1: Create a lambda function that cleans one response
+
+This function does 3 things:
+
+1. Keeps the name as-is
+2. Converts "5/5" → 5 (extracts number before '/')
+3. Cleans comment: removes spaces, converts to lowercase
+
+##### hint 2 :
+
+Use list comprehension to apply lambda to ALL responses
+[clean_response(r) for r in survey_responses]
+This is equivalent to:
+
+```python
+result = []
+for r in survey_responses:
+    result.append(clean_response(r))
+return result
 ```
