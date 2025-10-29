@@ -1,0 +1,25 @@
+Grade Report
+============
+Student_1: Average = 66.00
+Student_2: Average = 86.00
+Student_3: Average = 82.33
+Student_4: Average = 61.67
+Student_5: Average = 75.67
+Student_6: Average = 67.00
+Student_7: Average = 72.00
+Student_8: Average = 83.67
+Student_9: Average = 81.67
+Student_10: Average = 77.67
+Student_11: Average = 89.00
+Student_12: Average = 70.33
+Student_13: Average = 84.00
+Student_14: Average = 69.00
+Student_15: Average = 67.00
+Student_16: Average = 81.67
+Student_17: Average = 61.00
+Student_18: Average = 71.33
+Student_19: Average = 80.00
+Student_20: Average = 75.67
+
+Highest Average: Student_11 (89.00)
+Lowest Average: Student_17 (61.00)
