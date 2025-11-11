@@ -214,9 +214,9 @@ except IOError as e:
 - Handle permission errors
 
 **Output**
-Lines: 14
-Words: 151
-Characters: 917
+Lines: 84  
+Words: 906  
+Characters: 5502  
 
 ---
 
